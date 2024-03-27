@@ -12,7 +12,7 @@ const url = new URL(Astro.request.url);
 		<a
 			aria-current={url.pathname === "/" ? "page" : false}
 			class="inline-flex items-center grayscale hover:filter-none sm:relative sm:inline-block"
-			href="/"
+			href="/simon"
 		>
 			<svg
 				aria-hidden="true"
@@ -47,7 +47,7 @@ const url = new URL(Astro.request.url);
 						aria-current={url.pathname === link.path ? "page" : false}
 						class="px-4 py-4 sm:py-0 sm:hover:underline"
 						data-astro-prefetch
-						href={link.path}
+						href={`/simon${link.path}`}
 					>
 						{link.title}
 					</a>

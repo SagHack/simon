@@ -16,7 +16,10 @@ import { menuLinks, siteConfig } from "@/site-config";
 	>
 		{
 			menuLinks.map((link) => (
-				<a class="px-4 py-2 sm:py-0 sm:hover:text-textColor sm:hover:underline base" href={link.path}>
+				<a
+					class="base px-4 py-2 sm:py-0 sm:hover:text-textColor sm:hover:underline"
+					href={`/simon${link.path}`}
+				>
 					{link.title}
 				</a>
 			))
