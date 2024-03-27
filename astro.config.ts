@@ -9,11 +9,13 @@ import { remarkReadingTime } from "./src/utils/remark-reading-time";
 import icon from "astro-icon";
 import expressiveCode from "astro-expressive-code";
 import { expressiveCodeOptions } from "./src/site.config";
+// import relativeLinks from 'astro-relative-links';
 
 // https://astro.build/config
 export default defineConfig({
 	// ! Please remember to replace the following site property with your own domain
 	site: "https://saghack.github.io/simon/",
+	// base: 'simon',
 	markdown: {
 		remarkPlugins: [remarkUnwrapImages, remarkReadingTime],
 		rehypePlugins: [
@@ -39,6 +41,7 @@ export default defineConfig({
 		}),
 		sitemap(),
 		mdx(),
+		// relativeLinks(true),
 	],
 	image: {
 		domains: ["webmention.io"],
