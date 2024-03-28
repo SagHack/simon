@@ -27,7 +27,7 @@ jobs:
         uses: pnpm/action-setup@v2
         with:
           version: 8
-          run_install: true
+          run_install: false
 
       - name: Get pnpm store directory
         shell: bash
@@ -43,7 +43,7 @@ jobs:
             ${{ runner.os }}-pnpm-store-
 
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm install --force
 
         # use astro check for issues
       - name: Run check
