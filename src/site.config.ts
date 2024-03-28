@@ -9,12 +9,12 @@ export const siteConfig: SiteConfig = {
 	// Meta property used as the default description meta property
 	description: "Insertar descripción...",
 	// HTML lang property, found in src/layouts/Base.astro L:18
-	lang: "en-GB",
+	lang: "es-ES",
 	// Meta property, found in src/components/BaseHead.astro L:42
-	ogLocale: "en_GB",
+	ogLocale: "es_ES",
 	// Date.prototype.toLocaleDateString() parameters, found in src/utils/date.ts.
 	date: {
-		locale: "en-GB",
+		locale: "es-ES",
 		options: {
 			day: "numeric",
 			month: "short",
