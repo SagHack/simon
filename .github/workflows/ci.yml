@@ -23,12 +23,6 @@ jobs:
         with:
           node-version: 18
 
-      - name: Update package.json and regenerate lockfile
-        run: |
-          npm install --package-lock-only
-          git add package-lock.json
-          git commit -m "Update lockfile" || echo "No changes to commit"
-
       - name: install pnpm
         uses: pnpm/action-setup@v2
         with:
